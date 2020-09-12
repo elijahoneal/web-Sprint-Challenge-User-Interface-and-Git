@@ -49,6 +49,7 @@ table {
 
 * {
     box-sizing: border-box;
+    
 }
 
 html, body {
@@ -66,9 +67,29 @@ p {
     line-height: 1.4;
 }
 
+a {
+    text-decoration:none;
+    color: black;
+}
+
 .container {
     width: 800px;
     margin: 0 auto;
+}
+
+header{
+    display:flex;
+    justify-content: space-around;
+    align-items:baseline;
+    margin: 5% 0;
+}
+nav{
+    width:80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.banner{
+    margin-bottom: 20px;
 }
 
 .top-content {
@@ -104,13 +125,24 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
+  
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.box1{background-color:teal;} 
+.box2{background-color:gold;} 
+.box3{background-color:cadetblue;} 
+.box4{background-color:coral;} 
+.box5{background-color:crimson;} 
+.box6{background-color:forestgreen;} 
+.box7{background-color:darkorchid;} 
+.box8{background-color:hotpink;} 
+.box9{background-color:indigo;} 
+.box10{background-color:dodgerblue;} 
 
 .bottom-content {
     display: flex;
@@ -125,6 +157,44 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+
+/*About Page*/
+.about{
+    width:95%;
+    border-bottom: 1px dashed black;
+    padding-bottom:5%;
+    margin:0 2.5% 5%;
+}
+
+.strategy-gallery{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.strategy{
+    width:45%;
+    border-bottom: 1px dashed black;
+    padding-bottom:5%;
+    margin-bottom:5%;
+}
+
+.strategy h4, p{
+    margin: 2% 0;
+}
+p.button{
+    width:35%;
+    padding: 2% 3%;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align:center;
+}
+.work-together{
+    width:95%;
+    margin: 0 2.5% 5%;
+}
+/*About Section End*/
 
 footer {
     width: 100%;
